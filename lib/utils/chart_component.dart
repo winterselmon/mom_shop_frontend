@@ -1,20 +1,14 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:mom_shop/utils/utils.dart';
 
 class NetIncomeChart extends StatelessWidget {
-  NetIncomeChart({super.key});
-
-  List<Color> gradientColors = [
-    const Color(0xff23b6e6),
-    const Color(0xff02d39a),
-  ];
+  const NetIncomeChart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: LineChart(
-        _incomeChart(),
-      ),
+    return LineChart(
+      _incomeChart(),
     );
   }
 

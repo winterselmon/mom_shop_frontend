@@ -1,6 +1,6 @@
 {
-    "name": "mon_shop",
-    "short_name": "mon_shop",
+    "name": "mom_shop",
+    "short_name": "mom_shop",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
