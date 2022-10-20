@@ -1,19 +1,19 @@
-part of 'home_bloc.dart';
+part of 'income_bloc.dart';
 
-abstract class HomeEvent extends Equatable {
-  const HomeEvent();
+abstract class IncomeEvent extends Equatable {
+  const IncomeEvent();
 
   @override
   List<Object> get props => [];
 }
 
-class HomeEventInit extends HomeEvent {
-  const HomeEventInit() : super();
+class IncomeEventInit extends IncomeEvent {
+  const IncomeEventInit() : super();
   @override
   List<Object> get props => [];
 }
 
-class SetViewMode extends HomeEvent {
+class SetViewMode extends IncomeEvent {
   final String currentViewMode;
   const SetViewMode({required this.currentViewMode}) : super();
   @override

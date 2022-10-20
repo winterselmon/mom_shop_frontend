@@ -16,5 +16,11 @@ class ExpandMenuBloc extends Bloc<ExpandMenuEvent, ExpandMenuState> {
         emit(const ExpandeMenuState(isExpand: false));
       }
     });
+
+    on<SetCurrentMenu>((event, emit) {
+      String currentMenu = event.currentMenu;
+
+      emit(SetCurrentMenuState(currentMenu: currentMenu));
+    });
   }
 }

@@ -19,3 +19,10 @@ class SetExpandMenu extends ExpandMenuEvent {
   @override
   List<Object> get props => [isExpand];
 }
+
+class SetCurrentMenu extends ExpandMenuEvent {
+  final String currentMenu;
+  const SetCurrentMenu({required this.currentMenu}) : super();
+  @override
+  List<Object> get props => [currentMenu];
+}

@@ -22,13 +22,13 @@ class NetIncomeChart extends StatelessWidget {
         getDrawingHorizontalLine: (value) {
           return FlLine(
             color: const Color(0xff37434d),
-            strokeWidth: 1,
+            strokeWidth: 0.1,
           );
         },
         getDrawingVerticalLine: (value) {
           return FlLine(
             color: const Color(0xff37434d),
-            strokeWidth: 1,
+            strokeWidth: 0.1,
           );
         },
       ),
@@ -58,8 +58,12 @@ class NetIncomeChart extends StatelessWidget {
         ),
       ),
       borderData: FlBorderData(
-          show: true,
-          border: Border.all(color: const Color(0xff37434d), width: 1)),
+        show: true,
+        border: Border.all(
+          color: const Color(0xff37434d),
+          width: 1,
+        ),
+      ),
       minX: 0,
       maxX: 11,
       minY: 0,
@@ -81,10 +85,10 @@ class NetIncomeChart extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
           ),
-          barWidth: 5,
+          barWidth: 4,
           isStrokeCapRound: true,
           dotData: FlDotData(
-            show: false,
+            show: true,
           ),
           belowBarData: BarAreaData(
             show: true,

@@ -18,3 +18,13 @@ class ExpandeMenuState extends ExpandMenuState {
   @override
   List<Object> get props => [isExpand];
 }
+
+class SetCurrentMenuState extends ExpandMenuState {
+  final String currentMenu;
+
+  const SetCurrentMenuState({
+    required this.currentMenu,
+  }) : super();
+  @override
+  List<Object> get props => [currentMenu];
+}

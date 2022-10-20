@@ -8,3 +8,13 @@ abstract class HomeState extends Equatable {
 }
 
 class HomeInitial extends HomeState {}
+
+class CurrentViewModeState extends HomeState {
+  final String currentViewMode;
+
+  const CurrentViewModeState({
+    required this.currentViewMode,
+  }) : super();
+  @override
+  List<Object> get props => [currentViewMode];
+}

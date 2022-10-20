@@ -22,9 +22,13 @@ class AppView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return MaterialApp(
-        title: 'Steward',
+        title: 'Mom-Shop',
         theme: ThemeData(
           fontFamily: GoogleFonts.kanit().fontFamily,
+          splashFactory: NoSplash.splashFactory,
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+          hoverColor: Colors.transparent,
         ),
         debugShowCheckedModeBanner: false,
         onGenerateRoute: generateRoute,
